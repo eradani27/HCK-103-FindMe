@@ -4,14 +4,12 @@ FindMe adalah website sederhana untuk membantu pengelolaan informasi orang hilan
 
 ## Fitur
 
-Menampilkan daftar orang hilang dan orang yang telah ditemukan.
-Menambahkan data orang hilang baru.
-Mengubah informasi dan status orang.
-Menghapus data orang yang telah ditemukan.
-Mencari data berdasarkan nama, usia, ciri fisik, lokasi, pakaian, dan kontak.
-Memfilter data berdasarkan seluruh data, masih hilang, atau telah ditemukan.
-Menampilkan salah satu data orang hilang sebagai sorotan utama.
-Memvalidasi input sebelum data disimpan.
+- Menampilkan daftar orang hilang dan orang yang telah ditemukan.
+- Menambahkan data orang hilang baru.
+- Mengubah informasi dan status orang.
+- Menghapus data orang yang telah ditemukan.
+- Memfilter data berdasarkan seluruh data, masih hilang, atau telah ditemukan.
+- Menampilkan salah satu data orang hilang sebagai sorotan utama.
 
 ## Teknologi
 
@@ -23,12 +21,10 @@ Memvalidasi input sebelum data disimpan.
 
 ## Cara Menjalankan
 
-## Cara Menjalankan
-
 1. Clone repository ini:
 
    ```bash
-   git clone https://github.com/
+   git clone https://github.com/eradani27/HCK-103-FindMe.git
    ```
 
 2. Buka folder proyek di Visual Studio Code.
