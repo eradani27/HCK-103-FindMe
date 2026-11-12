@@ -557,3 +557,176 @@ input:focus-visible {
 .found-section .person-card {
   border-color: var(--putih);
 }
+/* =================================
+   9. TENTANG KAMI
+================================= */
+
+.about-section {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 44px 16px 56px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px 48px;
+}
+
+.about-section h2 {
+  font-family: var(--font-judul);
+  font-weight: 800;
+  font-size: 30px;
+  color: var(--merah);
+}
+
+.about-section p {
+  flex: 1 1 380px;
+  max-width: 640px;
+  font-size: 17px;
+}
+
+/* =================================
+   10. FORMULIR TAMBAH & EDIT
+================================= */
+
+.form-view {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 32px 16px 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.form-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.form-heading h2 {
+  font-family: var(--font-judul);
+  font-weight: 800;
+  font-size: clamp(32px, 5vw, 46px);
+  line-height: 1.05;
+}
+
+#person-form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.form-part {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-part h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--merah);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(180px, 100%), 1fr));
+  gap: 12px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.form-error {
+  padding: 10px 13px;
+  border: 2px solid var(--merah);
+  border-radius: 10px;
+  color: var(--merah-gelap);
+  font-weight: 600;
+}
+
+.form-error:empty {
+  display: none;
+}
+
+.form-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+/* =================================
+   11. PESAN SINGKAT
+================================= */
+
+.notice {
+  position: fixed;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  z-index: 200;
+  width: max-content;
+  max-width: calc(100% - 32px);
+  padding: 12px 18px;
+  background-color: var(--hitam);
+  color: var(--putih);
+  border: 1.5px solid var(--putih);
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.notice:empty {
+  display: none;
+}
+
+/* =================================
+   12. RESPONSIVE DESIGN
+================================= */
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .nav-menu {
+    order: 3;
+    width: 100%;
+  }
+
+  .hero-photo {
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo h1 {
+    font-size: 21px;
+  }
+
+  .navbar .btn {
+    padding: 0 12px;
+    font-size: 13px;
+  }
+
+  .nav-menu {
+    gap: 0 15px;
+  }
+
+  .nav-link {
+    font-size: 13px;
+  }
+
+  .hero-story {
+    font-size: 17px;
+  }
+
+  .section-heading h2 {
+    font-size: 28px;
+  }
+}
