@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>FindMe - Pengelolaan Data Orang Hilang</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- HEADER & NAVBAR -->
+    <header class="navbar">
+      <div class="logo">
+        <h1>FIND<span>ME</span></h1>
+      </div>
+
+      <nav class="nav-menu" aria-label="Menu utama">
+        <a href="#beranda" class="nav-link active">Beranda</a>
+        <a href="#data-pencarian" class="nav-link">Data Pencarian</a>
+        <a href="#tentang-kami" class="nav-link">Tentang Kami</a>
+      </nav>
+
+      <button type="button" class="btn btn-primary" id="btn-open-form">
+        + Tambah Orang Hilang
+      </button>
+    </header>
+
+    <!-- TAMPILAN DAFTAR -->
+    <div id="beranda" class="list-view">
+      <!-- SOROTAN: SATU ORANG YANG SEDANG DICARI -->
+      <section id="hero" class="hero" aria-label="Orang yang sedang disorot"></section>
+
+      <!-- DATA PENCARIAN -->
+      <main id="data-pencarian" class="main-container">
+        <div class="section-heading">
+          <h2>Data Orang Hilang</h2>
+          <p>Temukan dan bantu sebarkan informasi orang hilang.</p>
+          <p class="sample-note">
+            Data di halaman ini contoh dan kembali seperti semula saat halaman
+            di-refresh.
+          </p>
+        </div>
+
+        <!-- FILTER -->
+        <div class="controls-bar">
+          <div class="filter-tabs">
+            <button
+              type="button"
+              class="filter-btn active"
+              data-filter="all"
+              aria-pressed="true"
+            >
+              Semua (<span data-count="all">0</span>)
+            </button>
+
+            <button
+              type="button"
+              class="filter-btn"
+              data-filter="missing"
+              aria-pressed="false"
+            >
+              Masih Hilang (<span data-count="missing">0</span>)
+            </button>
+
+            <button
+              type="button"
+              class="filter-btn"
+              data-filter="found"
+              aria-pressed="false"
+            >
+              Telah Ditemukan (<span data-count="found">0</span>)
+            </button>
+          </div>
+        </div>
+
+        <!-- KARTU ORANG YANG MASIH DICARI -->
+        <div id="missing-section" class="card-section">
+          <h3>Masih dicari</h3>
+          <div id="missing-grid" class="card-grid"></div>
+        </div>
+      </main>
+
+      <!-- KARTU ORANG YANG TELAH DITEMUKAN -->
+      <section
+        id="found-section"
+        class="found-section"
+        aria-labelledby="found-title"
+      >
+        <div class="found-inner">
+          <h3 id="found-title">Telah ditemukan</h3>
+          <div id="found-grid" class="card-grid"></div>
+        </div>
+      </section>
+
+      <!-- TENTANG KAMI -->
+      <section id="tentang-kami" class="about-section">
+        <h2>Tentang Kami</h2>
+
+        <p>
+          FindMe merupakan platform pengelolaan dan pencarian informasi orang
+          hilang untuk membantu masyarakat memperoleh informasi secara
+          terstruktur.
+        </p>
+      </section>
+    </div>
+  </body>
+</html>
