@@ -215,3 +215,345 @@ input:focus-visible {
   padding: 2px 9px;
   border-radius: 999px;
 }
+
+/* =================================
+   5. SOROTAN (HERO)
+================================= */
+
+.hero {
+  background-color: var(--merah);
+  color: var(--putih);
+}
+
+.hero-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 40px 16px 44px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 32px;
+}
+
+.hero-photo {
+  flex: 1 1 300px;
+  max-width: 100%;
+  min-height: 400px;
+  border-radius: 16px;
+}
+
+.hero-photo svg {
+  width: 82%;
+  max-width: 340px;
+}
+
+.hero-text {
+  flex: 2 1 460px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+}
+
+.day-badge {
+  align-self: flex-start;
+  background-color: var(--hitam);
+  color: var(--putih);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 999px;
+}
+
+.hero-text h2 {
+  font-family: var(--font-judul);
+  font-weight: 800;
+  font-size: clamp(42px, 6.4vw, 76px);
+  line-height: 1;
+  letter-spacing: -0.015em;
+  text-wrap: balance;
+  overflow-wrap: anywhere;
+}
+
+.hero-story {
+  font-size: 19px;
+  line-height: 1.45;
+  max-width: 38em;
+}
+
+.hero-traits {
+  font-size: 16px;
+}
+
+.hero-contact {
+  align-self: flex-start;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0 16px;
+  padding: 12px 18px;
+  background-color: var(--putih);
+  color: var(--hitam);
+  border-radius: 14px;
+}
+
+.hero-contact span {
+  font-weight: 600;
+}
+
+.hero-contact strong {
+  font-family: var(--font-judul);
+  font-weight: 800;
+  font-size: 26px;
+  font-variant-numeric: tabular-nums;
+  overflow-wrap: anywhere;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.hero-message {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 48px 16px;
+  font-family: var(--font-judul);
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 1.1;
+}
+
+/* =================================
+   6. DATA PENCARIAN
+================================= */
+
+.main-container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 40px 16px 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section-heading h2 {
+  font-family: var(--font-judul);
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 1.1;
+  margin-bottom: 4px;
+}
+
+.sample-note {
+  color: var(--abu-teks);
+  font-size: 14px;
+}
+
+.controls-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.filter-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.filter-btn {
+  min-height: 44px;
+  padding: 0 16px;
+  border: 1.5px solid var(--hitam);
+  border-radius: 999px;
+  background-color: var(--putih);
+  color: var(--hitam);
+  font-size: 14.5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.filter-btn:hover {
+  background-color: var(--abu-hover);
+}
+
+.filter-btn.active,
+.filter-btn.active:hover {
+  background-color: var(--hitam);
+  color: var(--putih);
+}
+
+.form-group input {
+  width: 100%;
+  min-height: 46px;
+  padding: 9px 13px;
+  border: 1.5px solid var(--hitam);
+  border-radius: 10px;
+  background-color: var(--putih);
+  color: var(--hitam);
+  font-size: 15.5px;
+}
+
+.form-group input[type="file"] {
+  padding: 8px;
+  cursor: pointer;
+}
+
+/* =================================
+   7. KARTU ORANG
+================================= */
+
+.card-section {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.card-section h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(330px, 100%), 1fr));
+  gap: 16px;
+}
+
+.card-grid:has(.confirm-box) {
+  align-items: start;
+}
+
+.person-card {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 14px;
+  background-color: var(--putih);
+  color: var(--hitam);
+  border: 1.5px solid var(--hitam);
+  border-radius: 16px;
+}
+
+.person-summary {
+  flex-grow: 1;
+  display: flex;
+  gap: 14px;
+}
+
+.card-photo {
+  flex: none;
+  width: 92px;
+  height: 116px;
+  border-radius: 10px;
+}
+
+.card-photo svg {
+  width: 88px;
+}
+
+.person-text {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-size: 14.5px;
+  overflow-wrap: anywhere;
+}
+
+.person-text h4 {
+  font-family: var(--font-judul);
+  font-weight: 800;
+  font-size: 21px;
+  line-height: 1.15;
+}
+
+.day-count {
+  color: var(--merah);
+}
+
+.person-contact {
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.found-badge {
+  align-self: flex-start;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 1px 9px;
+  border: 1.5px solid var(--hitam);
+  border-radius: 999px;
+}
+
+.card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.person-card.found .photo-frame {
+  background-color: var(--putih);
+  color: var(--hitam);
+  border: 1.5px solid var(--hitam);
+}
+
+.person-card.found .photo-frame img {
+  filter: none;
+}
+
+.confirm-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 12px;
+  border: 2px solid var(--merah);
+  border-radius: 12px;
+}
+
+.confirm-box p {
+  font-weight: 600;
+}
+
+.confirm-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 6px;
+}
+
+/* =================================
+   8. TELAH DITEMUKAN
+================================= */
+
+.found-section {
+  background-color: var(--hitam);
+  color: var(--putih);
+}
+
+.found-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 40px 16px 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.found-inner h3 {
+  font-family: var(--font-judul);
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 1.1;
+}
+
+.found-section .person-card {
+  border-color: var(--putih);
+}
