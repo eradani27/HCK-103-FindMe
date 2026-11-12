@@ -111,5 +111,127 @@
         </p>
       </section>
     </div>
+
+  
+    
+    <!-- TAMPILAN FORMULIR TAMBAH & EDIT -->
+    <section
+      id="form-view"
+      class="form-view hidden"
+      aria-labelledby="form-title"
+    >
+      <div class="form-heading">
+        <button type="button" class="btn btn-small" id="btn-back">
+          Kembali ke daftar
+        </button>
+        <h2 id="form-title">Tambah Data Orang Hilang</h2>
+      </div>
+
+      <form id="person-form" novalidate>
+        <div class="form-part">
+          <h3>Identitas</h3>
+
+          <div class="form-group">
+            <label for="input-name">Nama Lengkap</label>
+            <input
+              type="text"
+              id="input-name"
+              placeholder="Contoh: Selene Johnson"
+            />
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="input-age">Usia (Tahun)</label>
+              <input
+                type="number"
+                id="input-age"
+                min="0"
+                max="120"
+                placeholder="57"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="input-hair">Ciri Rambut</label>
+              <input
+                type="text"
+                id="input-hair"
+                placeholder="Rambut pendek"
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="input-hw">Tinggi &amp; Berat Badan</label>
+            <input type="text" id="input-hw" placeholder="170 cm, 65 kg" />
+          </div>
+        </div>
+
+        <div class="form-part">
+          <h3>Terakhir terlihat</h3>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="input-date">Tanggal</label>
+              <input type="date" id="input-date" />
+            </div>
+
+            <div class="form-group">
+              <label for="input-place">Lokasi</label>
+              <input
+                type="text"
+                id="input-place"
+                placeholder="Stasiun Manggarai, Jakarta Selatan"
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="input-clothes">Pakaian Saat Itu</label>
+            <input
+              type="text"
+              id="input-clothes"
+              placeholder="Kemeja biru dan celana hitam"
+            />
+          </div>
+        </div>
+
+        <div class="form-part">
+          <h3>Kontak dan foto</h3>
+
+          <div class="form-group">
+            <label for="input-contact">Nomor Kontak / Telepon (Maks. 13 digit angka)</label>
+            <input
+              type="text"
+              id="input-contact"
+              inputmode="numeric"
+              maxlength="13"
+              placeholder="Contoh: 081234567890"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="input-image">Unggah Foto (Opsional)</label>
+            <input type="file" id="input-image" accept="image/*" />
+          </div>
+        </div>
+
+        <p id="form-error" class="form-error" role="alert"></p>
+
+        <div class="form-footer">
+          <button type="button" class="btn" id="btn-cancel-form">Batal</button>
+          <button type="submit" class="btn btn-primary" id="btn-save-form">
+            Simpan &amp; Publikasikan
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <!-- PESAN SINGKAT SETELAH SEBUAH AKSI -->
+    <p id="notice" class="notice" role="status"></p>
+
+    <!-- JAVASCRIPT -->
+    <script src="index.js"></script>
   </body>
 </html>
